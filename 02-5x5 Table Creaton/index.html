@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- <table class="mytable">
+        <caption>Static Table</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table> -->
+</body>
+<script>
+    function createTable() {
+        let tab = document.createElement('table');
+        tab.style.border = "1px solid blue";
+        tab.style.marginLeft = "auto";
+        tab.style.marginRight = "auto";
+        let caption = document.createElement('caption');
+        caption.style.border="1px solid blue";
+        caption.innerText = "Dynamic Table by DOM";
+        tab.appendChild(caption);
+        let number = 1;
+        for (let index = 1; index <= 5; index++) {
+            let tr = document.createElement('tr');
+            for (let j = 1; j <= 5; j++) {
+                let td = document.createElement('td');
+                td.style.border = "1px solid red";
+                td.innerText = number;
+                tr.appendChild(td)
+                number++;
+            }
+            tab.appendChild(tr);
+            document.body.appendChild(tab);
+        }
+    }
+    createTable();
+
+
+    function createFloydTable() {
+        let tab = document.createElement('table');
+        tab.style.border = "1px solid blue";
+        tab.style.paddingBottom = "1 rem";
+        tab.style.marginLeft = "auto";
+        tab.style.marginRight = "auto";
+        let caption = document.createElement('caption');
+        caption.style.border="1px solid blue";
+        caption.innerText = "Dynamic Floyd by DOM";
+        tab.appendChild(caption);
+        let number = 1;
+        for (let index = 1; index <= 5; index++) {
+            let tr = document.createElement('tr');
+            for (let j = 1; j <= index; j++) {
+                let td = document.createElement('td');
+                td.style.border = "1px solid red";
+                td.innerText = number;
+                tr.appendChild(td)
+                number++;
+            }
+            tab.appendChild(tr);
+            document.body.appendChild(tab);
+        }
+    }
+    createFloydTable();
+</script>
+
+</html>
