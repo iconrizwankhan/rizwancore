@@ -1,0 +1,51 @@
+.table-container {
+    height: 100%; /* Set a height limit for the table */
+    width: 100%; /* Ensure the table takes up full width */
+}
+input{
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100px;
+    padding: 5px;
+}
+th{
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0.1px solid lightgray;
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+th#column-header {
+    position: sticky;
+    top: 0; /* Stick the top row to the top */
+    z-index: 1;
+    border: 0.1px solid lightgray;
+}
+
+th#row-header {
+    position: sticky;
+    left: 0; /* Stick the first column to the left */
+    z-index: 1; /* Ensure row headers appear above content */
+    border: 0.1px solid lightgray;
+}
+th#corner-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Highest z-index to stay on top of other elements */
+    background-color: #f4f4f4; /* Same background color */
+}
+
+td {
+    border: 0.1px solid lightgray;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+}

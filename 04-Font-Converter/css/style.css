@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Grey+Qo&family=Jersey+10&family=New+Amsterdam&display=swap');
+
+body{
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+.main-div {
+  text-align: center;
+  padding-top: 5%;
+  /* padding-bottom: 10%; */
+}
+
+.heading{
+  color: rgba(51, 137, 139, 0.795);
+  font-family: "Jersey 10", sans-serif;
+  font-size: 60px;
+}
+.input,
+.output {
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: #fdfdd52c;
+  width: 570px;
+  height: 100px;
+  font-size: 40px;
+}
+.select-font,button{
+  background: #fdfdd52c;
+  border-radius: 3px;
+  border: 1px solid gray;
+  height: 30px;
+  cursor: pointer;
+}

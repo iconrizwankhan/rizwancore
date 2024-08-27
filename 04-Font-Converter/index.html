@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Font Converter</title>
+</head>
+
+<body style="text-align: center;">
+    <p class="heading">Online Font Converter</p>
+    <div class="main-div">
+        <form id="text-form">
+        <input type="text" class="input" id="input-text" placeholder=" Enter text to Convert">
+        <!-- <label for="font-select">Choose a Font</label> -->
+        <select name="font" class="select-font" id="font-select" onchange="convert(this.value)">
+            <option class="option" value="" selected disabled>Select a Font to Apply</option>
+            <option class="option" value="Bodoni Moda SC">Bodoni Moda SC</option>
+            <option class="option" value="Grey Qo">Grey Qo</option>
+            <option class="option" value="New Amsterdam">New Amsterdam</option>
+        </select>
+        <!-- <button class="btn-submit" onclick="convert()">Change</button> -->
+        <input type="text" class="output" id="output-text" readonly>
+        </form>
+    </div>
+    <button onclick="resetText()">Refresh</button>
+</body>
+<script src="./script/script.js"></script>
+</html>
