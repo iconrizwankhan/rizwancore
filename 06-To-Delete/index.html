@@ -5,15 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Delete</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="main-div">
-        <h3>CRUD Operation</h3>
-        <input type="text" id="input-text">
-        <button id="btn-sbumit" onclick="addNow()">Add</button>
-        <span id="added-text"></span>
-    </div>
+    <center>
+        <div class="maindiv">
+            <h3>CRUD Operation</h3>
+            <button type="button" class="showform" onclick="showForm()">Open Form</button>
+
+            <div class="formdiv" id="form-div">
+                <form action="" class="formcontainer">
+                    <div>
+                        <label for="username">Enter Username:</label>
+                        <input class="username" id="user-name" type="text" placeholder="Example 'jhondoe' " required>
+                    </div>
+                    <div>
+                        <label for="userpassword">Enter Password:</label>
+                        <input class="userpassword" id="user-password" type="password" placeholder="Set a Password"
+                            required>
+                    </div>
+                    <div>
+                        <label for="userfullname">Enter Full Name:</label>
+                        <input class="userfullname" id="user-fullname" type="text" placeholder="Example 'Jhon Doe'"
+                            required>
+                    </div>
+                    <div>
+                        <label for="useremail">Enter Email:</label>
+                        <input class="useremail" id="user-email" type="email" placeholder="Your correct Email Id"
+                            required>
+                    </div>
+                    <div>
+                        <label for="userphone">Enter Phone:</label>
+                        <input class="userphone" id="user-phone" type="number" placeholder="Your 10-Digit Phone"
+                            required>
+                    </div>
+                    <div>
+                        <button id="btn-sbumit" class="addnow" onclick="addNow()">Add</button>
+                        <button id="btn-closeform" class="closeform" onclick="closeForm()" type="button">Close</button>
+                    </div>
+                </form>
+            </div>
+            <div id="added-text">
+                <table>
+                        <tr>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </center>
 </body>
 <script src="./script/script.js"></script>
 
