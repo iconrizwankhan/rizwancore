@@ -11,13 +11,9 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get("https://api.github.com/users", {
-          //we can also destructure using {data}
-          auth: {
-            username: "iconrizwankhan",
-            password: "",
-          },
-        });
+        const response = await axios.get("https://api.github.com/users", 
+          
+        );
         setUsers(response.data);
       } catch (error) {
         console.log(error);
@@ -30,12 +26,7 @@ function App() {
     try {
       const { data } = await axios.get(
         `https://api.github.com/search/users?q=${username}`,
-        {
-          auth: {
-            username: "iconrizwankhan",
-            password: "",
-          },
-        }
+       
       );
       setUsers(data.items);
     } catch (error) {

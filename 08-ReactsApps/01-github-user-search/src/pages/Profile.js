@@ -11,12 +11,7 @@ function Profile({ searchUsers }) {
       try {
         const { data } = await axios.get(
           `https://api.github.com/users/${username}`,
-          {
-            auth: {
-              username: "iconrizwankhan",
-              password: "",
-            },
-          }
+          
         );
         setUserdata(data);
       } catch (error) {
