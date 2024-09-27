@@ -14,7 +14,7 @@ function Profile({ searchUsers }) {
           {
             auth: {
               username: "iconrizwankhan",
-              password: "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",
+              password: "",
             },
           }
         );

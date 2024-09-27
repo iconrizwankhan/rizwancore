@@ -1,6 +1,5 @@
 import axios from "axios";
 import "./App.css";
-// import Navbar from "./components/Navbar";
 import Users from "./components/Users";
 import Profile from "./pages/Profile";
 import { useState, useEffect } from "react";
@@ -16,7 +15,7 @@ function App() {
           //we can also destructure using {data}
           auth: {
             username: "iconrizwankhan",
-            password: "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",
+            password: "",
           },
         });
         setUsers(response.data);
@@ -34,7 +33,7 @@ function App() {
         {
           auth: {
             username: "iconrizwankhan",
-            password: "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",
+            password: "",
           },
         }
       );
