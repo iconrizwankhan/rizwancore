@@ -11,16 +11,18 @@ function Searchbar({ searchUsers }) {
   const onSubmithandler = (e) => {
     e.preventDefault();
     searchUsers(query);
-
-    setQuery('');
+    setQuery("");
   };
   return (
     <div className="search-container">
-      <form style={{display:"flex"}} onSubmit={onSubmithandler}>
+      <form style={{ display: "flex" }} onSubmit={onSubmithandler}>
         <input
-          type="text" className="form-control"
+          type="text"
+          className="form-control"
           placeholder="Github user search engine"
-          onChange={onChangehandler} value={query} required
+          onChange={onChangehandler}
+          value={query}
+          required
         />
         <input type="submit" className="btn btn-primary" value="Search" />
       </form>
