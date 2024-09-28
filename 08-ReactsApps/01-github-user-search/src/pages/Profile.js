@@ -16,8 +16,8 @@ function Profile({ searchUsers, loading, setIsLoading, resetUsers }) {
           `https://api.github.com/users/${username}`,
           {
             auth: {
-              username: "fawaz-exe",
-              password: "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",
+              username: "",
+            password: ""
             },
           }
         );

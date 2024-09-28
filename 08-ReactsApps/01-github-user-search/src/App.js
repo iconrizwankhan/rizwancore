@@ -18,8 +18,8 @@ function App() {
         const response = await axios.get("https://api.github.com/users", {
           //we can also destructure using {data}
           auth: {
-            username: "fawaz-exe",
-            password: "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",
+            username: "",
+            password: ""
           },
         });
         setTimeout(() => {
@@ -44,12 +44,12 @@ function App() {
         `https://api.github.com/search/users?q=${username}`,
         {
           auth: {
-            username: "fawaz-exe",
-            password: "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",
+            username: "maazahmedhussain",
+            password: "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"
           },
         }
       );
-      setUsers(data.items);
+      setUsers(data.items||[]);
     } catch (error) {
       console.log(error);
     }
